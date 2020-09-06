@@ -14,5 +14,5 @@ server.listen().then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 
   sequelize.authenticate()
-    
+    .then(() => console.log('Database connected!'))
 });
