@@ -1,10 +1,7 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-// The GraphQL schema
-const typeDefs =
-
-// A map of functions which return data for the schema.
 const resolvers = require('./graphql/resolvers');
+const typeDefs = require('./graphql/typeDefs');
 
 const server = new ApolloServer({
   typeDefs,
